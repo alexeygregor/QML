@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Calculator</class>
+ <widget class="QMainWindow" name="Calculator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>654</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="1">
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>/</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="pushButton">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>+</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>*</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QLineEdit" name="Value1">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>25</pointsize>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LayoutDirection::LeftToRight</enum>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2" colspan="2">
+         <widget class="QLineEdit" name="Value2">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>25</pointsize>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LayoutDirection::LeftToRight</enum>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="4">
+         <widget class="QLineEdit" name="Result">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>25</pointsize>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LayoutDirection::LeftToRight</enum>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>654</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>button2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>192</x>
+     <y>471</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>548</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>button1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>37</x>
+     <y>472</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>38</x>
+     <y>552</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>button3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>355</x>
+     <y>466</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>357</x>
+     <y>548</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>button4()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>513</x>
+     <y>467</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>514</x>
+     <y>551</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>button1()</slot>
+  <slot>button2()</slot>
+  <slot>button3()</slot>
+  <slot>button4()</slot>
+ </slots>
+</ui>
